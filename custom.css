@@ -1,0 +1,188 @@
+/************navbar********************/
+
+nav {
+    z-index: 10000;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    border-bottom: solid 2px #F42300;
+    padding-bottom: 4px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #F42300;
+}
+/************index page***************/
+
+#tagline {
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    padding: 5em;
+}
+
+#head-description {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    font-weight: 400;
+}
+
+.orange {
+    color: rgb(244, 35, 0);
+}
+
+#bg-image {
+    background-image: url(img/spiderweb.jpg);
+    height: 100vh;
+    /***height of image 100% of viewport height, even when users resize it***/
+    
+    background-size: cover;
+    /***background image always covers the entire viewport, even when user resize it***/
+    
+    height: 100vh;
+}
+/******************work page****************/
+/*carousel section*/
+
+#work #myCarousel {
+    margin: 15px 0;
+}
+
+#work #myCarousel img {
+    width: 100vw;
+}
+/*portfolio section*/
+
+#work .modal-content {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#work .modal-backdrop.in {
+    opacity: .7;
+}
+
+#work #portfolio>div>div>h5 {
+    color: white;
+    font-size: 2em;
+    opacity: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+#work #portfolio>div>div>img:hover {
+    -webkit-filter: blur(5px) opacity(0.3);
+}
+
+#work #portfolio>div>div>img {
+    transition: 1.0s;
+    transition-timing-function: ease-in;
+}
+
+#work .bg-orange {
+    background-color: #F00D05;
+    padding: 30px;
+    margin: 30px 0;
+    position: relative;
+}
+
+#work .bg-brown {
+    background-color: #d68b00;
+    padding: 30px;
+    margin: 15px 0;
+    position: relative;
+}
+
+#work .bg-black {
+    background-color: #000000;
+    padding: 30px;
+    margin: 15px 0;
+    position: relative;
+}
+/**********contact**********/
+#page-contact{
+    background-color: #d0d0d0;
+    height: 100vh; /*****keep contact page always at 100% of viewport height*******/
+    overflow: hidden; 
+}
+
+#page-contact #address{
+    margin-top: 200px;
+    margin-right: 15px;
+}
+
+#page-contact a{
+    color: black;
+}
+/*********footer***********/
+footer {
+    background-color: #EEEEEE;
+    padding: 20% 0;
+}
+
+footer h6{
+    font-family: "helvetica neue";
+    font-weight: 300;
+    color: #4c4c4c;
+}
+
+footer #social-media{
+    padding: 20px 0;
+}
+
+footer a {
+    color: #4c4c4c;
+}
+
+footer a:hover{
+    color: rgb(244, 35, 0);
+}
+
+footer a:active{
+    color: rgb(244, 35, 0);
+}
+
+footer a:focused{
+    color: rgb(244, 35, 0);
+}
+
+footer a:visited{
+    color: rgb(244, 35, 0);
+}
+
+/******test page**********/
+
+.pumpkin {
+    fill: yellow;
+    stroke: orange;
+    stroke-width: 5;
+}
+
+#test #time {
+    font-family: serif;
+    margin: 80px;
+}
+
+@media (max-width: 768px) {
+    #tagline p {
+        display: none;
+    }
+    #tagline {
+        padding: 0;
+    }
+}
