@@ -123,11 +123,16 @@ p {
 
 #page-contact #address{
     margin-top: 200px;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 #page-contact a{
     color: black;
+}
+
+#page-contact #map-canvas{
+    height: 100vh;
 }
 
 /*********footer***********/
@@ -179,11 +184,15 @@ footer a:visited{
     margin: 80px;
 }
 
+/*******responsive design*****/
 @media (max-width: 768px) {
     #tagline p {
         display: none;
     }
     #tagline {
         padding: 0;
+    }
+    #page-contact #address{
+        margin-top: 100px;
     }
 }
