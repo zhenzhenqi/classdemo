@@ -130,9 +130,6 @@ p {
     color: black;
 }
 
-#page-contact #map-canvas{
-    width: 100vw !important;
-}
 /*********footer***********/
 footer {
     background-color: #EEEEEE;
